@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpeg" >
+    <link rel="stylesheet" href="category-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Electro World</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logotext">
+                    <a href="../index1.php"><h1>ELECTRO WORLD</h1></a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <!-- <input type="search" name="Search" id="Search" placeholder="Search Your Product Here"> -->
+                    <input type="text" id="searchInput" placeholder="Search Your Product Here"  onkeyup="searchFunction()" placeholder="Search for items...">
+                <ul id="searchList">
+                  <li><a href="#">Google Pixel 8 Pro</a></li>
+                  <li><a href="#">Samsung Galaxy S23 Ultra</a></li>
+                  <li><a href="#">Oneplus 11</a></li>
+                  <li><a href="#">Iphone 15</a></li>
+                  <li><a href="#">Iphone 15 Pro</a></li>
+                  <li><a href="#">Pixel 6a</a></li>
+                  <li><a href="#">S23</a></li>
+                  <li><a href="#">Fold 5</a></li>
+                  <li><a href="#">Sony x90</a></li>
+                  <li><a href="#">LG C2</a></li>
+                  <li><a href="#">Samsung S90c</a></li>
+                  <li><a href="#">Samsung QLED</a></li>
+                  <li><a href="#">Sony x74k</a></li>
+                  <li><a href="#">LG ThinQ</a></li>
+                  <li><a href="#">Sony x85</a></li>
+                  <li><a href="#">Xiaomi OLED</a></li>
+                  <li><a href="#">Macbook M3 pro</a></li>
+                  <li><a href="#">ROG Zephyrus</a></li>
+                  <li><a href="#">HP Spectre x360</a></li>
+                  <li><a href="#">ROG Strix</a></li>
+                  <li><a href="#">Framework 13</a></li>
+                  <li><a href="#">Dell XPS</a></li>
+                  <li><a href="#">Microsoft surface pro 8</a></li>
+                  <li><a href="#">Samsung Book 3 Ultra</a></li>
+                  <li><a href="#">Sony XM5</a></li>
+                  <li><a href="#">Beats by Dre</a></li>
+                  <li><a href="#">Sennheiser Momentum 4 Wireless</a></li>
+                  <li><a href="#">Apple AirPods</a></li>
+                  <li><a href="#">Samsung Galaxy buds</a></li>
+                  <li><a href="#">Google Pixel Buds</a></li>
+                  <li><a href="#">Nothing Ear 2</a></li>
+                  <li><a href="#">Apple AirPods Pro</a></li>
+                  <li><a href="#">Samsung Galaxy tab s9 Ultra</a></li>
+                  <li><a href="#">Samsung Galaxy tab s8</a></li>
+                  <li><a href="#">Pixel Tablet</a></li>
+                  <li><a href="#">iPad Air</a></li>
+                  <li><a href="#">iPad Pro 12.9</a></li>
+                  <li><a href="#">Ipad 9th Gen</a></li>
+                  <li><a href="#">Xiaomi pad 6</a></li>
+                  <li><a href="#">Microsoft surface tablet</a></li>
+                  <li><a href="#">Playstation 5</a></li>
+                  <li><a href="#">Dualsense 5</a></li>
+                  <li><a href="#">Xbox Series S</a></li>
+                  <li><a href="#">Xbox Series X</a></li>
+                  <li><a href="#">Xbox Controller</a></li>
+                  <li><a href="#">Nintendo Switch</a></li>
+                  <li><a href="#">Playstation 4 Pro</a></li>
+                  <li><a href="#">Dualsense 4</a></li>
+                  <li><a href="#">Galaxy Watch 5</a></li>
+                  <li><a href="#">Galaxy Watch 5 Pro</a></li>
+                  <li><a href="#">Galaxy Watch 6 Classic</a></li>
+                  <li><a href="#">Apple Watch Series 9</a></li>
+                  <li><a href="#">Apple Watch Ultra</a></li>
+                  <li><a href="#">Pixel Watch 2</a></li>
+                  <li><a href="#">Garmin MARQ Captain 2</a></li>
+                  <li><a href="#">Fossil Gen 6</a></li>
+                </ul>
+
+                
+                <script>
+                function searchFunction() {
+                
+                var input = document.getElementById("searchInput");
+                var filter = input.value.toUpperCase();
+                
+                var list = document.getElementById("searchList");
+                var items = list.getElementsByTagName("li");
+                    
+                for (var i = 0; i < items.length; i++) {
+                    var link = items[i].getElementsByTagName("a")[0];
+                    var text = link.textContent || link.innerText;
+                    if (filter !== "" && text.toUpperCase().indexOf(filter) > -1) {
+                    items[i].style.display = "block";
+                    } else {
+                    items[i].style.display = "none";
+                    }
+                }
+                }
+                </script>
+                </div>
+                <div class="sign">
+                    <a href="Login-reg/index.php"><i class="fa-solid fa-circle-user" style="color: #ffffff;"></i>Sign in</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h1 style="
+      text-align: center;
+      text-decoration: underline;
+      background-color: #448aff;
+      color: white;
+    ">Wearables</h1>
+
+    <main>
+      <div class="box">
+          <div class="product1">
+              <a href="#"><img src="../images/Wearables/appleseries9.jpg" alt="ds5"></a>
+              <h2>Apple Series 9</h2>
+              <h3>$59.99</h3>
+          </div>
+          <div class="product2">
+              <a href="#"><img src="../images/Wearables/applewatchultra.jpg" alt="ds5"></a>
+              <h2>Apple Watch Ultra</h2>
+              <h3>$59.99</h3>
+          </div>
+          <div class="product3">
+              <a href="#"><img src="../images/Wearables/fossilgen6.webp" alt="ds5"></a>
+              <h2>Fossil Gen 6</h2>
+              <h3>$59.99</h3>
+          </div>
+          <div class="product4">
+              <a href="#"><img src="../images/Wearables/garmincaptain.jpg" alt="ds5"></a>
+              <h2>Garmin Captain 2</h2>
+              <h3>$59.99</h3>
+          </div>
+          <div class="product5">
+              <a href="#"><img src="../images/Wearables/pixelwatch2.png" alt="ds5"></a>
+              <h2>Google Pixel Watch 2</h2>
+              <h3>$59.99</h3>
+          </div>
+          <div class="product6">
+              <a href="#"><img src="../images/Wearables/watch5.webp" alt="ds5"></a>
+              <h2>Galaxy Watch 5</h2>
+              <h3>$59.99</h3>
+          </div>
+          <div class="product6">
+            <a href="#"><img src="../images/Wearables/watch5pro.jpg" alt="ds5"></a>
+            <h2>Galaxy Warch 5 Pro</h2>
+            <h3>$59.99</h3>
+        </div>
+        <div class="product6">
+          <a href="#"><img src="../images/Wearables/watch6classic.avif" alt="ds5"></a>
+          <h2>Galaxy Watch 6</h2>
+          <h3>$59.99</h3>
+      </div>
+      </div>
+  </main>
+
+    <!--
+        <div class="product-grid">
+            <div class="product-card">
+
+              
+                <a href="../products/product-page.html"><img src="../images/gaming.webp" alt="Gaming console logo" class="product-image"></a>
+                <div class="product-info">
+                  <h3 class="product-name">Gaming Console</h3>
+                  <p class="product-description">A powerful and sleek gaming console that lets you play the latest games in stunning quality.</p>
+                  <p class="product-price">$499.99</p>
+                </div>
+              
+            </div>
+            <div class="product-card">
+           
+              
+                <img src="console-logo.png" alt="Gaming console logo" class="product-image">
+                <div class="product-info">
+                  <h3 class="product-name">Gaming Console</h3>
+                  <p class="product-description">A powerful and sleek gaming console that lets you play the latest games in stunning quality.</p>
+                  <p class="product-price">$499.99</p>
+                
+              </div>
+            </div>
+            <div class="product-card">
+      
+
+                <img src="console-logo.png" alt="Gaming console logo" class="product-image">
+                <div class="product-info">
+                  <h3 class="product-name">Gaming Console</h3>
+                  <p class="product-description">A powerful and sleek gaming console that lets you play the latest games in stunning quality.</p>
+                  <p class="product-price">$499.99</p>
+                </div>
+            </div>
+            <div class="product-card">
+        
+              <img src="console-logo.png" alt="Gaming console logo" class="product-image">
+              <div class="product-info">
+                <h3 class="product-name">Gaming Console</h3>
+                <p class="product-description">A powerful and sleek gaming console that lets you play the latest games in stunning quality.</p>
+                <p class="product-price">$499.99</p>
+              </div>
+            </div>
+
+            <div class="product-card">
+      
+              <img src="console-logo.png" alt="Gaming console logo" class="product-image">
+              <div class="product-info">
+                <h3 class="product-name">Gaming Console</h3>
+                <p class="product-description">A powerful and sleek gaming console that lets you play the latest games in stunning quality.</p>
+                <p class="product-price">$499.99</p>
+              </div>
+            </div>
+
+            <div class="product-card">
+         
+              <img src="console-logo.png" alt="Gaming console logo" class="product-image">
+              <div class="product-info">
+                <h3 class="product-name">Gaming Console</h3>
+                <p class="product-description">A powerful and sleek gaming console that lets you play the latest games in stunning quality.</p>
+                <p class="product-price">$499.99</p>
+              </div>
+            </div>
+
+            <div class="product-card">
+         
+              <img src="console-logo.png" alt="Gaming console logo" class="product-image">
+              <div class="product-info">
+                <h3 class="product-name">Gaming Console</h3>
+                <p class="product-description">A powerful and sleek gaming console that lets you play the latest games in stunning quality.</p>
+                <p class="product-price">$499.99</p>
+              </div>
+            </div>
+
+            <div class="product-card">
+            
+              <img src="console-logo.png" alt="Gaming console logo" class="product-image">
+              <div class="product-info">
+                <h3 class="product-name">Gaming Console</h3>
+                <p class="product-description">A powerful and sleek gaming console that lets you play the latest games in stunning quality.</p>
+                <p class="product-price">$499.99</p>
+              </div>
+            </div>
+          </div> -->
+
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <p>Number of items in cart: <span id="cart-count"></span></p>
+    <p>Total price of items in cart: <span id="cart-total"></span></p>
+    
+    <script>
+    var cart = new Cart();
+    
+    // Add items to cart here
+    
+    function updateCart() {
+      document.getElementById('cart-count').innerHTML = cart.getTotalItems();
+      document.getElementById('cart-total').innerHTML = '$' + cart.getTotalPrice().toFixed(2);
+    }
+    
+    updateCart();
+    </script>
+    
+    <div id="add-to-cart"></div>
+    
+</body>
+</html>
