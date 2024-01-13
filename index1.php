@@ -17,9 +17,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
     <title>Electro World</title>
 </head>
 <body>
-<!--
-<h1 style="color: black">Hello, <!--
-<?php //echo $_SESSION['name']; -->?></h1> -->
+
 
     <header>
         <nav>
@@ -39,62 +37,62 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                     <!-- <input type="search" name="Search" id="Search" placeholder="Search Your Product Here"> -->
                     <input type="text" id="searchInput" placeholder="Search Your Product Here"  onkeyup="searchFunction()" placeholder="Search for items...">
                 <ul id="searchList">
-                    <li><a href="#">Google Pixel 8 Pro</a></li>
-                    <li><a href="#">Samsung Galaxy S23 Ultra</a></li>
-                    <li><a href="#">Oneplus 11</a></li>
-                    <li><a href="#">Iphone 15</a></li>
-                    <li><a href="#">Iphone 15 Pro</a></li>
-                    <li><a href="#">Pixel 6a</a></li>
-                    <li><a href="#">S23</a></li>
-                    <li><a href="#">Fold 5</a></li>
-                    <li><a href="#">Sony x90</a></li>
-                    <li><a href="#">LG C2</a></li>
-                    <li><a href="#">Samsung S90c</a></li>
-                    <li><a href="#">Samsung QLED</a></li>
-                    <li><a href="#">Sony x74k</a></li>
-                    <li><a href="#">LG ThinQ</a></li>
-                    <li><a href="#">Sony x85</a></li>
-                    <li><a href="#">Xiaomi OLED</a></li>
-                    <li><a href="#">Macbook M3 pro</a></li>
-                    <li><a href="#">ROG Zephyrus</a></li>
-                    <li><a href="#">HP Spectre x360</a></li>
-                    <li><a href="#">ROG Strix</a></li>
-                    <li><a href="#">Framework 13</a></li>
-                    <li><a href="#">Dell XPS</a></li>
-                    <li><a href="#">Microsoft surface pro 8</a></li>
-                    <li><a href="#">Samsung Book 3 Ultra</a></li>
-                    <li><a href="#">Sony XM5</a></li>
-                    <li><a href="#">Beats by Dre</a></li>
-                    <li><a href="#">Sennheiser Momentum 4 Wireless</a></li>
-                    <li><a href="#">Apple AirPods</a></li>
-                    <li><a href="#">Samsung Galaxy buds</a></li>
-                    <li><a href="#">Google Pixel Buds</a></li>
-                    <li><a href="#">Nothing Ear 2</a></li>
-                    <li><a href="#">Apple AirPods Pro</a></li>
-                    <li><a href="#">Samsung Galaxy tab s9 Ultra</a></li>
-                    <li><a href="#">Samsung Galaxy tab s8</a></li>
-                    <li><a href="#">Pixel Tablet</a></li>
-                    <li><a href="#">iPad Air</a></li>
-                    <li><a href="#">iPad Pro 12.9</a></li>
-                    <li><a href="#">Ipad 9th Gen</a></li>
-                    <li><a href="#">Xiaomi pad 6</a></li>
-                    <li><a href="#">Microsoft surface tablet</a></li>
-                    <li><a href="#">Playstation 5</a></li>
-                    <li><a href="#">Dualsense 5</a></li>
-                    <li><a href="#">Xbox Series S</a></li>
-                    <li><a href="#">Xbox Series X</a></li>
-                    <li><a href="#">Xbox Controller</a></li>
-                    <li><a href="#">Nintendo Switch</a></li>
-                    <li><a href="#">Playstation 4 Pro</a></li>
+                    <li><a href="products/Mobiles/pixel8pro.html">Google Pixel 8 Pro</a></li>
+                    <li><a href="products/Mobiles/s23ultra.html">Samsung Galaxy S23 Ultra</a></li>
+                    <li><a href="products/Mobiles/oneplus11.html">Oneplus 11</a></li>
+                    <li><a href="products/Mobiles/iphone15.html">Iphone 15</a></li>
+                    <li><a href="products/Mobiles/iphone15pro.html">Iphone 15 Pro</a></li>
+                    <li><a href="products/Mobiles/pixel6a.html">Pixel 6a</a></li>
+                    <li><a href="products/Mobiles/s23.html">S23</a></li>
+                    <li><a href="products/Mobiles/fold5.html">Fold 5</a></li>
+                    <li><a href="products/Televisions/sonyX90H.html">Sony x90</a></li>
+                    <li><a href="products/Televisions/LGC3.html">LG C2</a></li>
+                    <li><a href="products/Televisions/S90C.html">Samsung S90c</a></li>
+                    <li><a href="products/Televisions/SamsungQLED..html">Samsung QLED</a></li>
+                    <li><a href="products/Televisions/sonyX74K.html">Sony x74k</a></li>
+                    <li><a href="products/Televisions/LGTHINQ.html">LG ThinQ</a></li>
+                    <li><a href="products/Televisions/SonyX80K.html">Sony x85</a></li>
+                    <li><a href="products/Televisions/miOLED.html">Xiaomi OLED</a></li>
+                    <li><a href="products/Laptops/macbook.html">Macbook M3 pro</a></li>
+                    <li><a href="products/Laptops/rogzephyrus.html">ROG Zephyrus</a></li>
+                    <li><a href="products/Laptops/hpspectre.html">HP Spectre x360</a></li>
+                    <li><a href="products/Laptops/rogStrix.html">ROG Strix</a></li>
+                    <li><a href="products/Laptops/framework.html">Framework 13</a></li>
+                    <li><a href="products/Laptops/dellxps.html">Dell XPS</a></li>
+                    <li><a href="products/Laptops/surfacelaptop.html">Microsoft surface pro 8</a></li>
+                    <li><a href="products/Laptops/galaxybook.html">Samsung Book 3 Ultra</a></li>
+                    <li><a href="products/Headphones/sonyxm5.html">Sony XM5</a></li>
+                    <li><a href="products/Headphones/beatsbydre.html">Beats by Dre</a></li>
+                    <li><a href="products/Headphones/sennheiser.html">Sennheiser Momentum 4 Wireless</a></li>
+                    <li><a href="products/Headphones/airpods.html">Apple AirPods</a></li>
+                    <li><a href="products/Headphones/galaxybuds.html">Samsung Galaxy buds</a></li>
+                    <li><a href="products/Headphones/pixelbuds.html">Google Pixel Buds</a></li>
+                    <li><a href="products/Headphones/nothingbuds.html">Nothing Ear 2</a></li>
+                    <li><a href="products/Headphones/airpodspro.html">Apple AirPods Pro</a></li>
+                    <li><a href="products/Tablets/s9ultra..html">Samsung Galaxy tab s9 Ultra</a></li>
+                    <li><a href="products/Tablets/galaxys8.html">Samsung Galaxy tab s8</a></li>
+                    <li><a href="products/Tablets/pixeltab.html">Pixel Tablet</a></li>
+                    <li><a href="products/Tablets/ipadair.html">iPad Air</a></li>
+                    <li><a href="products/Tablets/ipadpro.html">iPad Pro 12.9</a></li>
+                    <li><a href="products/Tablets/ipad9.html">Ipad 9th Gen</a></li>
+                    <li><a href="products/Tablets/mipad6.html">Xiaomi pad 6</a></li>
+                    <li><a href="products/Tablets/surfacetab.html">Microsoft surface tablet</a></li>
+                    <li><a href="products/Gaming/ps5.html">Playstation 5</a></li>
+                    <li><a href="products/Gaming/ds5.html">Dualsense 5</a></li>
+                    <li><a href="products/Gaming/seriesS.html">Xbox Series S</a></li>
+                    <li><a href="products/Gaming/seriesx.html">Xbox Series X</a></li>
+                    <li><a href="products/Gaming/xboxcontroller.html">Xbox Controller</a></li>
+                    <li><a href="products/Gaming/switcholed.html">Nintendo Switch</a></li>
+                    <li><a href="products/Gaming/ps4pro.html">Playstation 4 Pro</a></li>
                     <li><a href="products/Gaming/ds4.html">Dualshock 4</a></li>
-                    <li><a href="#">Galaxy Watch 5</a></li>
-                    <li><a href="#">Galaxy Watch 5 Pro</a></li>
-                    <li><a href="#">Galaxy Watch 6 Classic</a></li>
-                    <li><a href="#">Apple Watch Series 9</a></li>
-                    <li><a href="#">Apple Watch Ultra</a></li>
-                    <li><a href="#">Pixel Watch 2</a></li>
-                    <li><a href="#">Garmin MARQ Captain 2</a></li>
-                    <li><a href="#">Fossil Gen 6</a></li>
+                    <li><a href="products/Wearables/watch5.html">Galaxy Watch 5</a></li>
+                    <li><a href="products/Wearables/watch5pro.html">Galaxy Watch 5 Pro</a></li>
+                    <li><a href="products/Wearables/watch6classic.html">Galaxy Watch 6 Classic</a></li>
+                    <li><a href="products/Wearables/appleseries9.html">Apple Watch Series 9</a></li>
+                    <li><a href="products/Wearables/applewatchultra.html">Apple Watch Ultra</a></li>
+                    <li><a href="products/Wearables/pixelwatch2.html">Pixel Watch 2</a></li>
+                    <li><a href="products/Wearables/garmincaptain.html">Garmin MARQ Captain 2</a></li>
+                    <li><a href="products/Wearables/fossilgen6.html">Fossil Gen 6</a></li>
                 </ul>
 
                 
@@ -120,7 +118,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                 </script>
                 </div>
                 <div class="sign">
-                    <a href="Login-reg/index.php"><i class="fa-solid fa-circle-user" style="color: #ffffff;"></i>Sign in</a>
+                    <a href="Login-reg/index.php"><i class="fa-solid fa-circle-user" style="color: #ffffff;"></i>Sign in</a>                    
                 </div>
 
                 <div>
@@ -162,7 +160,86 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
             </div>
         </div>
 
-    </main>
+        <!-- Start of Featured Products Section -->
+        <div class="featured-products">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <!-- You can duplicate this section for each product -->
+                    <div class="product-card">
+                        <img class="product-image" src="images/Mobiles/iqoo12.jpg" alt="Product Name">
+                        <div class="product-info">
+                            <h3 class="product-name">IQOO 12 PRO</h3>
+                            <p class="product-description">Product Description</p>
+                            <p class="product-price">$600</p>
+                            <button class="product-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <!-- You can duplicate this section for each product -->
+                    <div class="product-card">
+                        <img class="product-image" src="images/Mobiles/rog 8.png" alt="Product Name">
+                        <div class="product-info">
+                            <h3 class="product-name">ASUS ROG PHONE 8</h3>
+                            <p class="product-description">Product Description</p>
+                            <p class="product-price">$1,140</p>
+                            <button class="product-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <!-- You can duplicate this section for each product -->
+                    <div class="product-card">
+                        <img class="product-image" src="images/Mobiles/iqoo9p.jpg" alt="Product Name">
+                        <div class="product-info">
+                            <h3 class="product-name">IQOO 9 PRO</h3>
+                            <p class="product-description">Product Description</p>
+                            <p class="product-price">$840</p>
+                            <button class="product-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <!-- You can duplicate this section for each product -->
+                    <div class="product-card">
+                        <img class="product-image" src="images/Mobiles/Ipad.webp" alt="Product Name">
+                        <div class="product-info">
+                            <h3 class="product-name">IPAD AIR</h3>
+                            <p class="product-description">Product Description</p>
+                            <p class="product-price">$470</p>
+                            <button class="product-button">Buy Now</button>
+                        </div>
+                    </div>
+                    <!-- End of a single product -->
+                </div>
+            </div>
+            <!-- End of Featured Products Section -->
+
+            <footer>
+                    <div class="company-info">
+                    <h2>About Electro World</h2>
+                    <div class="info-content">
+                        <div class="info-item">
+                            <i class="fas fa-globe"></i>
+                            <p>Electro World is a leading online electronics store offering a wide range of products.</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-star"></i>
+                            <p>We are committed to providing our customers with the best shopping experience.</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="footer-links">
+                    <div class="info-content">
+                        <div class="info-item">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="admin.php">Admin</a></li>
+                            <li><a href="cart.php">Cart</a></li>
+                            <li><a href="users.php">Users</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </footer>
+
+</main>
 </body>
 </html>
 

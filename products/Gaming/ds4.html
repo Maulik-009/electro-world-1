@@ -1,4 +1,54 @@
 <!DOCTYPE html>
+
+<!-- 1. COPY PASTE THIS WHOLE THING -->
+<!-- 2. CREATE A NEW FILE WITH THE NAMES SENT IN WHATSAPP AND PUT IT 
+	 IN IT'S RESPECTIVE FOLDER-->
+
+
+<!-- 3. THESE ARE THE NAMES OF THE HTML FILES TO CREATE -->
+<!-- [11:55, 10/01/2024] Mauliksinh: Gaming		Mobiles		Wearables	
+Headphones	Tablets		
+Laptops		Televisions
+
+[11:55, 10/01/2024] Mauliksinh: Gaming
+
+
+[11:55, 10/01/2024] Mauliksinh: ds4.jpg			ps5.jpg			switcholed.jpg
+ds5.png			seriesS.jpg		xboxcontroller.jpg
+ps4pro.webp		seriesx.png
+
+[11:55, 10/01/2024] Mauliksinh: Mobiles   
+
+Ipad.webp		iqoo12.jpg		pixel8pro.webp
+fold5.jpg		iqoo9p.jpg		rog 8.png
+iphone15.jpg		oneplus11.jpg		s23.jpg
+iphone15pro.webp	pixel6a.webp		s23ultra.jpg
+[11:56, 10/01/2024] Mauliksinh:Wearables  
+
+appleseries9.jpg	garmincaptain.jpg	watch5pro.jpg
+applewatchultra.jpg	pixelwatch2.png		watch6classic.avif
+fossilgen6.webp		watch5.webp
+[11:56, 10/01/2024] Mauliksinh: Headphones
+
+airpods.jpg		galaxybuds.jpg		sennheiser.jpg
+airpodspro.jpg		nothingbuds.webp	sonyxm5.avif
+beatsbydre.jpg		pixelbuds.webp
+[11:57, 10/01/2024] Mauliksinh: Tablets 
+
+galaxys8.jpg	ipadair.jpg	mipad6.webp	s9ultra.webp
+ipad9.jpg	ipadpro.jpg	pixeltab.jpg	surfacetab.jpg
+[11:57, 10/01/2024] Mauliksinh: Laptops 
+
+dellxps.avif		hpspectre.webp		rogzephyrus.png
+framework.webp		macbook.jpg		surfacelaptop.jpg
+galaxybook.jpg		rogStrix.png
+
+[11:57, 10/01/2024] Mauliksinh: Televisions
+
+LGC3.jpg		SamsungQLED.avif	sonyX74K.webp
+LGTHINQ.avif		SonyX80K.jpg		sonyX90H.jpg
+S90C.avif		miOLED.jpg -->
+
 <html>
 <head>
 	<title>Product Page</title>
@@ -15,7 +65,7 @@
                 </div>
                 <div class="nav">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="../../index1.html">Home</a></li>
                         <li><a href="#">Products</a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">About Us</a></li>
@@ -36,9 +86,13 @@
         </nav>
     </header>
 	<main>
+
+		<!-- CHANGE THIS URVISH -->
 		<section class="product-image">
-			<img src="../../images/Gaming/ds4.jpg" style="height: 500px; width: 800px;" alt="Product Image">
+			<img src="../../images/Gaming/ds4.jpg" alt="Product Image">
 		</section>
+
+		<!-- THIS ONE -->
 		<section class="product-details">
 			<h2>Product Details</h2>
 			<p>Product Description</p>
@@ -49,8 +103,16 @@
 				<li>Feature 4</li>
 			</ul>
 			<h3>Price: $100</h3>
-			<form action="../trn-scn.html">
+			<form action="../../php/insert.php" method="post">
+				<input type="hidden" name="productName" value="Dualshock 4">
+				<input type="hidden" name="productPrice" value="4000">
 				<button type="submit">Buy Now</button>
+			</form>
+
+			<form action="../../php/add_to_cart.php" method="post">
+				<input type="hidden" name="productName" id="productName" value="Dualshock 4">
+				<input type="hidden" name="productPrice" id="productPrice" value="4000">
+				<button type="submit">Add to Cart</button>
 			</form>
 		</section>
 	</main>

@@ -73,9 +73,10 @@
 }
 #searchInput 
 {
-    /* margin-top: 18px; */
+    margin-left: 4px;
+    margin-top: 15px;
     width: 16vw;
-    height: 14vh;
+    height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,21 +140,34 @@ main
     width: 80vw;
     height: 80vh;
 }
-
+@media only screen and (min-width:1470px){
+    .options{
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (min-width:0px) {
+    /* .mobiles ,.television ,.laptop ,.he ,.tablet ,.gaming ,.wear  */
+    .options
+    {
+        flex-wrap: wrap;
+        transition: 0.1s;
+    }
+}
 .options
 {
     display: flex;
     /* justify-content: space-between; */
-    gap: 45px;
+    gap: 36px;
     align-items: center;
     width: 97vw;
     height: 70vh; 
-    border: solid red;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.8);
 }
 
 .mobiles a img,.television a img,.laptop a img,.he a img,.tablet a img,.gaming a img,.wear a img
 {
     padding: 0 0 0 10px;
+    border-radius: 22px;
     width: 150px;
     height: 150px;
 
@@ -162,6 +176,15 @@ main
 .mobiles,.television,.laptop,.he,.tablet,.gaming,.wear
 {
     border: solid black;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.mobiles:hover,.television:hover,.laptop:hover,.he:hover,.tablet:hover,.gaming:hover,.wear:hover
+{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: translateY(-10px);
 }
 
 .product-card {
@@ -172,8 +195,14 @@ main
     margin: 20px;
     display: flex;
     flex-direction: column;
+    /* transition: box-shadow 0.3s ease, transform 0.3s ease; */
   }
   
+/* .product-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: translateY(-10px);
+} */
+
   .product-image {
     width: 100%;
     height: 200px;
@@ -235,7 +264,183 @@ main
     display: flex;
     flex-direction: column;
     z-index: 999;
-    overflow: auto;
+    overflow: hidden;
     height: 80px;
     width: 266px;
+}
+
+
+/* Start of Featured Products Section CSS */
+.featured-products {
+    width: 121%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.featured-products h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; /* Centers the text */
+    background-color: #448aff; /* Changes the background color */
+    color: white; /* Changes the text color to ensure it's visible on the new background */
+    padding: 10px; /* Adds some space around the text */
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.product-card img
+{
+    width: 200px;
+    margin-left: 30px;
+
+}
+.product-card {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    transform: translateY(-10px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0099ff;
+    margin-bottom: 10px;
+}
+
+.product-button {
+    width: 100%;
+    height: 40px;
+    background-color: #0099ff;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media only screen and (min-width:0px) {
+    .product-grid{
+        flex-wrap: nowrap;
+    }
+}
+/* End of Featured Products Section CSS */
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+
+footer {
+    background-color: #f4f8ff;
+    color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1430px;
+    animation: fadeIn 2s ease-in;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-info, .footer-links {
+    flex-basis: 36%;
+}
+
+.footer-links {
+    height:250px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.footer-links ul {
+    list-style-type: none;
+}
+
+.footer-links ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s, transform 0.5s;
+}
+
+.footer-links ul li a:hover {
+    color: #448aff;
+    transform: translateX(10px);
+}
+
+.company-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.info-content {
+    display: flex;
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-item i {
+    color: #448aff;
+    font-size: 24px;
+}
+
+.info-item p {
+    font-size: 18px;
+    color: #333;
 }

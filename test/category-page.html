@@ -13,19 +13,23 @@
         <nav>
             <div class="container">
                 <div class="logotext">
-                    <a href="index1.html"><h1>ELECTRO WORLD</h1></a>
+                    <a href="../index1.php"><h1>ELECTRO WORLD</h1></a>
                 </div>
                 <div class="nav">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Products</a></li>
+                        <li><a href="cart-category-test.html">Products</a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">About Us</a></li>
                     </ul>
                 </div>
                 <div class="search">
-                    <input type="search" name="Search" id="Search" placeholder="Search Your Product Here">
-                </div>
+                  <!-- <input type="search" name="Search" id="Search" placeholder="Search Your Product Here"> -->
+                  <input type="text" id="searchInput" placeholder="Search Your Product Here"  onkeyup="searchFunction()" placeholder="Search for items...">
+              <ul id="searchList">
+                <!-- Search list goes here li -->
+              </ul>
+              </div>
                 <div class="sign">
                     <a href="index.php"><i class="fa-solid fa-circle-user" style="color: #ffffff;"></i>Sign in</a>
                 </div>
@@ -33,9 +37,84 @@
         </nav>
     </header>
 
+    <h1 style="
+      text-align: center;
+      text-decoration: underline;
+      background-color: #448aff;
+      color: white;
+    ">Gaming</h1>
+
+    <main>
+      <div class="box">
+          <div class="product1">
+              <a href="#"><img src="../images/Gaming/ds5.png" alt="ds5"></a>
+              <h2>Dualsense 5</h2>
+              <h3>$59.99</h3>
+              <button onclick="addToCart('Dualsense 5', 59.99)">Add to Cart</button>
+          </div>
+          <div class="product2">
+              <a href="../products/Gaming/ds4.html"><img src="../images/Gaming/ds4.jpg" alt="ds5"></a>
+              <h2>Dualshock 4</h2>
+              <h3>$59.99</h3>
+          </div>
+          <div class="product3">
+              <a href="#"><img src="../images/Gaming/ps5.jpg" alt="ds5"></a>
+              <h2>Playstation 5</h2>
+              <h3>$59.99</h3>
+          </div>
+          <div class="product4">
+              <a href="#"><img src="../images/Gaming/ps4pro.webp" alt="ds5"></a>
+              <h2>Playstation 4 Pro</h2>
+              <h3>$59.99</h3>
+          </div>
+          <div class="product5">
+              <a href="#"><img src="../images/Gaming/seriesS.jpg" alt="ds5"></a>
+              <h2>Xbox Series S</h2>
+              <h3>$59.99</h3>
+          </div>
+          <div class="product6">
+              <a href="#"><img src="../images/Gaming/seriesx.png" alt="ds5"></a>
+              <h2>Xbox Series X</h2>
+              <h3>$59.99</h3>
+          </div>
+          <div class="product6">
+            <a href="#"><img src="../images/Gaming/switcholed.jpg" alt="ds5"></a>
+            <h2>Nintendo Switch OLED</h2>
+            <h3>$59.99</h3>
+        </div>
+        <div class="product6">
+          <a href="#"><img src="../images/Gaming/xboxcontroller.jpg" alt="ds5"></a>
+          <h2>Xbox Controller</h2>
+          <h3>$59.99</h3>
+      </div>
+      </div>
+
+      <script>
+        let cart = [];
+        
+        function addToCart(name, price) {
+            let existingItem = cart.find(item => item.name === name);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({name: name, price: price, quantity: 1});
+            }
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+        
+        function loadCart() {
+            cart = JSON.parse(localStorage.getItem('cart')) || [];
+        }
+        
+        loadCart();
+        </script>
+        
+  </main>
+
+    <!--
         <div class="product-grid">
             <div class="product-card">
-              <!-- The code for the first product card goes here -->
+
               
                 <a href="../products/product-page.html"><img src="../images/gaming.webp" alt="Gaming console logo" class="product-image"></a>
                 <div class="product-info">
@@ -46,7 +125,7 @@
               
             </div>
             <div class="product-card">
-              <!-- The code for the second product card goes here -->
+           
               
                 <img src="console-logo.png" alt="Gaming console logo" class="product-image">
                 <div class="product-info">
@@ -57,7 +136,7 @@
               </div>
             </div>
             <div class="product-card">
-              <!-- The code for the third product card goes here -->
+      
 
                 <img src="console-logo.png" alt="Gaming console logo" class="product-image">
                 <div class="product-info">
@@ -67,7 +146,7 @@
                 </div>
             </div>
             <div class="product-card">
-              <!-- The code for the fourth product card goes here -->
+        
               <img src="console-logo.png" alt="Gaming console logo" class="product-image">
               <div class="product-info">
                 <h3 class="product-name">Gaming Console</h3>
@@ -77,7 +156,7 @@
             </div>
 
             <div class="product-card">
-              <!-- The code for the fourth product card goes here -->
+      
               <img src="console-logo.png" alt="Gaming console logo" class="product-image">
               <div class="product-info">
                 <h3 class="product-name">Gaming Console</h3>
@@ -87,7 +166,7 @@
             </div>
 
             <div class="product-card">
-              <!-- The code for the fourth product card goes here -->
+         
               <img src="console-logo.png" alt="Gaming console logo" class="product-image">
               <div class="product-info">
                 <h3 class="product-name">Gaming Console</h3>
@@ -97,7 +176,7 @@
             </div>
 
             <div class="product-card">
-              <!-- The code for the fourth product card goes here -->
+         
               <img src="console-logo.png" alt="Gaming console logo" class="product-image">
               <div class="product-info">
                 <h3 class="product-name">Gaming Console</h3>
@@ -107,7 +186,7 @@
             </div>
 
             <div class="product-card">
-              <!-- The code for the fourth product card goes here -->
+            
               <img src="console-logo.png" alt="Gaming console logo" class="product-image">
               <div class="product-info">
                 <h3 class="product-name">Gaming Console</h3>
@@ -115,7 +194,7 @@
                 <p class="product-price">$499.99</p>
               </div>
             </div>
-          </div>
+          </div> -->
 
     
 </body>

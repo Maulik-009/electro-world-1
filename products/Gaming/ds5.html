@@ -4,22 +4,40 @@
 	<title>Product Page</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="product-page.css">
+	<link rel="stylesheet" href="../product-page.css">
 </head>
 <body>
 	<header>
-		<h1>Product Name</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Products</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-		</nav>
-	</header>
+        <nav>
+            <div class="container">
+                <div class="logotext">
+                    <a href="../index1.php"><h1>ELECTRO WORLD</h1></a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="../../index1.html">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                  <!-- <input type="search" name="Search" id="Search" placeholder="Search Your Product Here"> -->
+                  <input type="text" id="searchInput" placeholder="Search Your Product Here"  onkeyup="searchFunction()" placeholder="Search for items...">
+              <ul id="searchList">
+                <li><a href="#">Google Pixel 8 Pro</a></li>
+                <li><a href="#">Samsung Galaxy S23 Ultra</a></li>
+                
+              </div>
+                <div class="sign">
+                    <a href="index.php"><i class="fa-solid fa-circle-user" style="color: #ffffff;"></i>Sign in</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 	<main>
 		<section class="product-image">
-			<img src="product-image.jpg" alt="Product Image">
+			<img src="../../images/Gaming/ds5.png" alt="Product Image">
 		</section>
 		<section class="product-details">
 			<h2>Product Details</h2>
@@ -31,8 +49,16 @@
 				<li>Feature 4</li>
 			</ul>
 			<h3>Price: $100</h3>
-			<form action="trn-scs.html">
+			<form action="../../php/insert.php" method="post">
+				<input type="hidden" name="productName" value="Dualsense 5">
+				<input type="hidden" name="productPrice" value="5500">
 				<button type="submit">Buy Now</button>
+			</form>
+
+			<form action="../../php/add_to_cart.php" method="post">
+				<input type="hidden" name="productName" id="productName" value="Dualsense 5">
+				<input type="hidden" name="productPrice" id="productPrice" value="5500">
+				<button type="submit">Add to Cart</button>
 			</form>
 		</section>
 	</main>

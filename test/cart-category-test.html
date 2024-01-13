@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- head content here -->
+</head>
+<body>
+    <h1>Your Cart</h1>
+    <div id="cart"></div>
+
+    <script>
+    function displayCart() {
+        let cartDiv = document.getElementById('cart');
+        cartDiv.innerHTML = '';
+        cart.forEach(item => {
+            cartDiv.innerHTML += `<p>${item.name}: ${item.quantity} x $${item.price} = $${item.quantity * item.price}</p>`;
+        });
+    }
+
+    displayCart();
+    </script>
+</body>
+
+
+<script>
+    let cart = [];
+    
+    function addToCart(name, price) {
+        let existingItem = cart.find(item => item.name === name);
+        if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            cart.push({name: name, price: price, quantity: 1});
+        }
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
+    
+    function loadCart() {
+        cart = JSON.parse(localStorage.getItem('cart')) || [];
+    }
+    
+    loadCart();
+    </script>
+
+</html>
